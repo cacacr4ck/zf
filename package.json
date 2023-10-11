@@ -1,5 +1,5 @@
 {
-  "name": "Haruka-Md",
+  "name": "ZF-Assistant",
   "version": "11.0.1",
   "description": "whatsapp tob with multi device.",
   "main": "haruka.js",
@@ -7,7 +7,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "start": "node haruka.js"
+    "start": "npm i -g pm2 && pm2 start haruka.js && pm2 save && pm2 logs"
   },
   "keywords": [
     "termux",
@@ -18,7 +18,7 @@
   "author": "ZeeoneOfc",
   "license": "MIT",
   "dependencies": {
-    "@adiwajshing/baileys" : "npm:baileys@^6.0.9",
+    "@adiwajshing/baileys" : "^4.4.0",
     "@adiwajshing/keyed-db": "^0.2.4",
     "@bochilteam/scraper": "^2.0.0",
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
