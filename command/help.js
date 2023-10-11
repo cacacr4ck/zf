@@ -15,18 +15,12 @@ function toCommas(x) {
 exports.allMenu = (role, ucapanWaktu, pushname, mundur, upload, download, ownerName, botName, jam, tanggal, runtime, isCreator, isPremium, sender, limitCount, limit, gcount, glimit, balance, prefix) => {
     return`${ucapanWaktu} ${pushname !== undefined ? pushname : 'Kak'}
 
-Hitung Mundur Idul Fitri 🌙 
-${mundur}
-
 *STATISTICS*
  • Upload : ${upload}
  • Downloads : ${download}
 
 *BOT INFO*
  • Creator : ${ownerName}
- • Bot Name : ${botName}
- • Time : ${jam}
- • Date : ${tanggal(new Date())}
  • Runtime : ${runtime(process.uptime())}
 
 *USER INFO*
@@ -36,6 +30,7 @@ ${mundur}
  • Limit Game : ${isCreator ? 'Unlimited' : cekGLimit(sender, gcount, glimit)}
  • Balance : ${getBalance(sender, balance)}
  • Role : ${role}
+ > *NOTE : PREMIUM? PC OWNER (.owner)*
  
  
 *MAIN MENU*${petik}
@@ -151,7 +146,7 @@ ${mundur}
  • ${prefix}mediafire
  • ${prefix}gitclone${petik}
 
-*GROUP MENU*${petik}
+*GROUP MENU [admin]*${petik}
  • ${prefix}autoaigc
  • ${prefix}afk
  • ${prefix}welcome
@@ -189,12 +184,12 @@ ${mundur}
  • ${prefix}checksewa${petik}
 
 *GAME MENU*${petik}
- • ${prefix}tebakgambar
- • ${prefix}tebakkata
- • ${prefix}tebakbendera
- • ${prefix}tebakkalimat
- • ${prefix}tebaksiapa
- • ${prefix}tebakkimia
+ • ${prefix}tebakgambar  #NoRespon/kadang
+ • ${prefix}tebakkata  #NoRespon/kadang
+ • ${prefix}tebakbendera  #NoRespon/kadang
+ • ${prefix}tebakkalimat  #NoRespon/kadang
+ • ${prefix}tebaksiapa  #NoRespon/kadang
+ • ${prefix}tebakkimia  #NoRespon/kadang
  • ${prefix}tebaklirik
  • ${prefix}tebaktebakan
  • ${prefix}tekateki
@@ -294,8 +289,8 @@ ${mundur}
  • ${prefix}ukhty
  • ${prefix}syifa${petik}
 
-*NSFW MENU*${petik}
- • ${prefix}baka
+*NSFW MENU [Realtime]*${petik}
+ • ${prefix}baka #NoRespon
  • ${prefix}smug
  • ${prefix}neko_sfw
  • ${prefix}hentai_gif
