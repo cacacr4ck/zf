@@ -1,5 +1,5 @@
 {
-  "name": "ZF-Assistant",
+  "name": "zfassistant",
   "version": "11.0.1",
   "description": "whatsapp tob with multi device.",
   "main": "haruka.js",
@@ -7,7 +7,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "start": "npm i -g pm2 && pm2 start haruka.js && pm2 save && pm2 logs"
+    "start": "npm i && node haruka.js"
   },
   "keywords": [
     "termux",
@@ -15,7 +15,7 @@
     "2022",
     "baileys-md"
   ],
-  "author": "ZeeoneOfc",
+  "author": "bayurizkizulfikri",
   "license": "MIT",
   "dependencies": {
     "@adiwajshing/baileys" : "^4.4.0",
